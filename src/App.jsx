@@ -26,7 +26,7 @@ const App = () => {
   const isByeFinish = isHiDone >= 2 && isGoodKidDone >= 2 && isGiveSomethingDone >= 2 && isLoadingDone >= 2 && isBeforePresentDone >= 2 && (isByeDone !== 2 && isByeDone <= 2)
 
   return (
-    <div className="min-h-screen bg-[#101820FF] mx-5 md:mx-0 flex justify-center items-center">
+    <div className="min-h-screen bg-[#101820FF] px-5 md:px-0 flex justify-center items-center">
       {isHiFinish && <Hi doneHi={() => setIsHiDone(prev => prev + 1)}/>}
       {isGoodKidDoneFinish && <GoodKid doneGoodKid={() => setIsGoodKidDone(prev => prev + 1)} />}
       {isGiveSomethingFinish && <GiveSomething doneGive={() => setIsGiveSomethingDone(prev => prev + 1)} />}
